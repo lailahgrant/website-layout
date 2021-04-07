@@ -1,0 +1,161 @@
+	*{
+				box-sizing: border-box;
+			}
+
+			body{
+				margin: 0;
+				padding: 0;
+			}
+
+			/*.container{
+				position: absolute;
+				left: 20px;
+			}*/
+
+			span.logo{
+				font-family: chiller;
+				text-transform: uppercase;
+				font-size: 40px;
+				/*border:2px solid #c0e3cb;*/
+				border:2px solid #f2d5a2;
+				border-radius: 50%;
+				padding: 10px;
+				/*color: #c0e3cb;*/
+				color: #f2d5a2;
+			}
+			span.logo:hover{
+				color: white;
+				background-color: #f2d5a2;
+				border:2px solid white;
+			}
+
+			span.hd{
+				color: #f2d5a2;
+			}
+
+			header{
+				background-color: #333;
+				text-align: center;
+				color: #fff;
+				font-family: verdana;
+				font-size: 30px;
+				padding: 30px;
+			}
+
+			nav.nav {
+				display: inline-block;
+				width: 100%;
+				background-color: #333;
+				padding-bottom: 20px;
+			}
+
+			.nav a{
+				text-decoration: none;
+				margin-right: 50px;
+				margin-left: 50px;
+				padding: 20px;
+				color: #fff;
+				font-family: tahoma;
+				font-size: 20px;
+			}
+
+			nav a:hover{
+				background-color: #f2d5a2;
+				color: black;
+				/*opacity: 0.3;*/
+			}
+
+			h2{
+				font-weight: bolder;
+				text-align: center;
+				font-family: tahoma;
+				font-size: 30px;
+				color: white;
+
+			}
+
+			h4{
+				font-weight: lighter;
+				font-family: chiller;
+				font-size: 30px;
+				color: #f2d5a2;
+				padding: 10px;
+			}
+
+			.column{
+				background-color: #333;
+				float: left;
+				width: 30.33%;
+				text-align: center;
+				border:1px solid #f1f1f1;
+				margin: 20px;
+				/*padding:15px;*/
+			}
+
+			.column:hover{
+				border:1px solid #333;
+				transition: .3s;
+				background-color: #333;
+				/*color: white;*/
+				opacity: 0.9;
+			}
+
+			/* Clear floats after the columns in the container */
+					.container:after {
+	 				 content: "";
+	  				display: table;
+	  				clear: both;
+				}
+
+
+				footer {
+					background-color: #333;
+					margin-top: 50px; 
+					height: 100px;
+				}
+
+			address.foot pre{
+				color: white;
+				float: left;
+				font-family: tahoma !important;
+				font-size: 20px !important;
+				text-align: center !important;
+				font-weight: lighter !important;
+				/*width: 20.33%;*/
+				font-style: normal !important;
+			}
+
+			pre a{
+				color: white;
+				text-decoration: none;
+			}
+
+			/* Responsive layout - makes the three columns stack on top of each other instead of next to each other on smaller screens (600px wide or less) */
+			@media screen and (max-width: 600px){
+				/*header{
+					width: 100%;
+				}*/
+
+				/*nav.nav{
+					display: block;
+					width: 100%;
+				}*/
+
+				.column{
+					width: 100%;
+					margin-top:5px;
+					border:none;
+					margin-left: 0;
+				}
+
+				footer {
+					background-color: #333;
+					margin-top: 50px; 
+					height: 400px;
+				}
+
+				/*.container{
+				position: absolute;
+				left: 0;
+			}*/
+			}
